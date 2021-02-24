@@ -18,12 +18,12 @@ int main()
 {
 	uint32_t hsh = 0x474E5253L;
 	uint8_t result[9] = { 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20 };  // Initialize with spaces
-	uint32_t ownId = 0x95C6DA80;
+	uint32_t mlOwnId = 0x9E467A86;
 
 	printf("Initial Hash : 0x%x\n", hsh);
-	printf("Initial OwnID: 0x%x\n", ownId);
+	printf("Initial OwnID: 0x%x\n", mlOwnId);
 
-	updateID(result, hsh ^ ownId);  // ^ is bitwise XOR
+	updateID(result, hsh ^ mlOwnId);  // ^ is bitwise XOR
 
     std::cout << "Updated ID:\n";
 
